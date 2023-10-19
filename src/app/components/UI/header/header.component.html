@@ -1,0 +1,12 @@
+<mat-toolbar class="header">
+    <div>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>home</mat-icon>
+          </button>
+          <span>Online shop</span>
+    </div>
+    <div>
+        <button mat-stroked-button color="accent" [routerLink]="['/products']">Products</button>
+        <button mat-stroked-button color="accent" [routerLink]="['/basket']">Basket</button> 
+    </div>
+  </mat-toolbar>

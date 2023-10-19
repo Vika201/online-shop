@@ -1,0 +1,21 @@
+<div class="container">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{product.title}}</mat-card-title>
+        </mat-card-header>
+        <img class="image" mat-card-image src='../../../assets/images/macbook.jpeg' alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>Price: {{product.price | currency}}</p>
+          <p>Year: {{product.year}}</p>
+          <p>Chip: {{product.configure.chip}}</p>
+          <p>SSd: {{product.configure.ssd}}</p>
+          <p>Memory: {{product.configure.memory}}</p>
+          <p>Display: {{product.configure.display}}</p>
+
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Add To Basket</button>
+          <button mat-raised-button color="primary" [routerLink]="['/products', product.id]">Details</button>
+        </mat-card-actions>
+      </mat-card>
+</div>
